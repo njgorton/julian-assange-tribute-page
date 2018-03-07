@@ -1,0 +1,63 @@
+@keyframes quoteAnimation { 
+  0% { 
+    opacity: 0;
+    animation-timing-function: ease-in;
+    }
+
+  3% {
+    opacity: 1;
+    }
+
+  6% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+    }
+
+  9% {
+    opacity: 0;
+    }
+}
+
+.figure__quotes p:nth-of-type(2) {
+    animation-delay: 7s; 
+}
+
+.figure__quotes p:nth-of-type(3) { 
+  animation-delay: 14s; 
+}
+
+.figure__quotes p:nth-of-type(4) { 
+  animation-delay: 21s; 
+}
+
+.figure__quotes p:nth-of-type(5) { 
+  animation-delay: 28s; 
+}
+
+.figure__quotes p:nth-of-type(6) { 
+  animation-delay: 35s; 
+}
+
+.figure__quotes p:nth-of-type(7) { 
+  animation-delay: 42s; 
+}
+
+.figure__quotes p:nth-of-type(8) { 
+  animation-delay: 49s; 
+}
+
+.figure__quotes p:nth-of-type(9) { 
+  animation-delay: 56s; 
+}
+
+.figure__quotes p:nth-of-type(10) { 
+  animation-delay: 63s; 
+}
+
+.figure__quotes p:nth-of-type(11) { 
+  animation-delay: 70s; 
+}
+
+.figure__quotes p:nth-of-type(12) { 
+  animation-delay: 77s; 
+}

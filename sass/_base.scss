@@ -1,0 +1,44 @@
+// COLOR VARIABLES
+$text-light: #ffffff;
+$text-dark: #c8c8c8;
+
+$color-dark-primary: #000;
+$color-dark-secondary: #232323;
+$color-light: #ececec;
+
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 100em;    // 1600px
+$bp-large: 75em;       // 1200px
+$bp-medium: 62.5em;    // 1000px
+$bp-small: 50em;       // 800px
+$bp-smallest: 37.5em;  // 600px
+$bp-smallester: 25em;  // 400px
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px / 16px = 62.5%
+    font-family: 'Playfair Display', serif;
+
+    @media only screen and (min-width: $bp-largest) {
+        font-size: 70%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 55%;
+    }
+}
+
+body {
+    background-color: $color-dark-primary;
+    color: $text-light;
+}

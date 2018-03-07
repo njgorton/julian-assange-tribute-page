@@ -1,0 +1,257 @@
+.bio {
+    background-color: $color-dark-primary;
+    margin: 0 8rem; 
+    
+    @media only screen and (max-width: $bp-medium) {
+        margin: 0;
+    }
+
+    &__stripes:nth-child(odd) {
+        background-color: $color-light;
+        color: $color-dark-primary;
+    }
+    
+    &__stripes:nth-child(even) {
+        background-color: $color-dark-secondary;
+        color: $text-dark;
+    }
+
+    &__stripes:nth-child(1) {
+        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);                
+        padding-top: 10rem;
+        padding-bottom: 20rem;
+        margin-top: -5rem;
+        margin-bottom: -20rem;
+
+        @media only screen and (max-width: $bp-small) {
+            -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+         }
+
+         @media only screen and (max-width: $bp-smallest) {
+            -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+         }
+        
+    }
+
+    &__stripes:nth-child(2) {      
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+        padding-top: 10rem;
+        padding-bottom: 20rem;
+        margin-top: -10rem;
+        
+        @media only screen and (max-width: $bp-small) {
+            -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+         }
+
+         @media only screen and (max-width: $bp-smallest) {
+            -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+         }
+    }
+
+    &__stripes:nth-child(3) {       
+        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);        
+        padding-top: 5rem;
+        padding-bottom: 20rem;
+        margin-top: -15rem;
+
+        @media only screen and (max-width: $bp-small) {
+            -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+         }
+
+         @media only screen and (max-width: $bp-smallest) {
+            -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+         }
+    }
+
+    &__stripes:nth-child(4) {
+        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%); 
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        margin-top: -20rem; 
+
+        @media only screen and (max-width: $bp-small) {
+            -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+         }
+
+         @media only screen and (max-width: $bp-smallest) {
+            -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+         }
+    }
+
+    &__stripes:last-child {
+        background-color: $color-light;
+        color: $color-dark-primary; 
+        padding: 10rem;
+    }
+
+    h3 {
+        display: block;
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: .5rem;
+    }
+
+        /* Glyph, by Harry Roberts */
+    hr {
+        width: 50%;
+        overflow: visible; /* For IE */
+        padding: 0;
+        border: none;
+        border-top: medium double currentColor;
+        color: currentColor;
+        text-align: center;
+        margin: auto;
+
+
+        &::after {
+            content: "\00a7";
+            display: inline-block;
+            position: relative;
+            top: -0.7em;
+            font-size: 1.5em;
+            padding: 0 0.25em;
+        }
+    }
+
+    p {
+        overflow: hidden;
+        font-size: 1.7rem;
+        line-height: 1.8;
+        padding: 3rem;  
+        
+        @media only screen and (max-width: $bp-small) {
+            padding: 3rem;
+         }
+    }
+
+    br {
+        display: block;
+        margin: 1rem;
+    }
+
+    .first-letter {
+        display: inline-block;
+        margin-bottom: -1.1rem;
+        font-size: 4rem;
+        font-weight: 700;        
+    }
+    
+    .center-text-1 {
+        display: block;
+        transform: translateY(1rem);
+
+        @media only screen and (max-width: $bp-small) {
+           transform: none;
+        }
+    }
+
+    .center-text-2 {
+        display: block;
+        transform: translateY(3rem);
+
+        @media only screen and (max-width: $bp-small) {
+            transform: none;
+         }
+    }
+
+    p img {
+        width: 100%;
+        border-radius: 2px;
+        margin-bottom: 2rem;  
+        
+        @media only screen and (max-width: $bp-large) {
+            margin-bottom: 1rem;       
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 3rem;
+         }
+    }
+
+    .pic-1 {
+        max-width: 60rem;
+    }
+
+    .pic-2 {
+        max-width: 60rem;
+    }
+
+    .pic-3 {
+        max-width: 50rem;
+    }
+
+    .pic-4 {
+        max-width: 40rem;
+    }
+
+    .pic-1,
+    .pic-3 {
+        float: right;
+        margin-left: 3rem;        
+        box-shadow: -1rem 1rem 2rem rgba(0,0,0,.2); 
+        
+        @media only screen and (max-width: $bp-small) {
+            float: none;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+    .pic-2,
+    .pic-4 {
+        float: left; 
+        margin-right: 3rem;
+        box-shadow: -1rem 1rem 2rem rgba(0,0,0,.5);
+
+        @media only screen and (max-width: $bp-small) {
+            float: none;
+            display: block;
+            margin: 0 auto;
+        }   
+    }
+    
+    .wikileaks-link {       
+       font-size: 2rem;
+       padding: 0;
+       
+       a {
+            &,
+            &:link,
+            &:visited {
+                display: inline-block;
+                text-decoration: none;
+                color: $text-dark;        
+                background-color: $color-dark-secondary;
+                border: 1rem, solid, rgba($text-dark, .5);
+                border-radius: .5rem;
+                padding: 1.2rem;
+                box-shadow: -1rem 1rem 2rem rgba(0,0,0,.3);
+                transition: all .2s;
+            }
+           
+            &:hover {
+                color: $text-light;                
+                box-shadow: -1.3rem 1.3rem 2rem rgba(0,0,0, .4);
+                transform: translateY(-.2rem);
+            }
+    
+            &:active {
+                box-shadow: -1.1rem 1.1rem 2rem rgba(0,0,0,.4);
+                transform: translateY(0);
+            }
+       }
+    }
+}
