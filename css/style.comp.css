@@ -329,6 +329,13 @@ body {
       box-shadow: -1.1rem 1.1rem 2rem rgba(0, 0, 0, 0.4);
       transform: translateY(0); }
 
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5rem; }
+
 .figure {
   max-width: 1800px;
   overflow: hidden;
